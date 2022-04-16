@@ -5,7 +5,7 @@
 //-----COLORS-----
 
 $almost-white: hsl(0, 0%, 98%);
-$medium-gray: hsl(0, 0%, 41%);
+$medium-gray: hsl(0, 0%, 49%);
 $almost-black: hsl(0, 0%, 8%);
 
 //-----FONTS-----
@@ -23,6 +23,7 @@ $font-fam: 'Epilogue', sans-serif;
 body{
     width:100vw;
     height:100vh;
+    overflow: hidden;
 }
 
 header{
@@ -87,7 +88,7 @@ header{
 
             .btn-register{
                 padding: 12px 20px;
-                border: 2.5px solid $medium-gray;
+                border: 2px solid $medium-gray;
                 color: $medium-gray;
                 background-color: transparent;
                 border-radius: 14px;
@@ -95,7 +96,7 @@ header{
                 cursor: pointer;
                 &:hover {
                     color: $almost-black;
-                    border: 2.5px solid $almost-black;
+                    border: 2px solid $almost-black;
                 }
             }
         }
@@ -108,12 +109,81 @@ header{
 main{
     display: flex;
     flex-direction: row;
+    padding: 30px;
+    // border: 1px solid blue;
+    .hero{
+        // border: 1px solid red;
+        width: 50%;
+        padding: 32px 0 32px 100px;
+        .hero-title{
+            // border: 1px solid green;
+            padding: 20px;
+            margin-top: 10px;
+            h1{
+                font-size: 80px;
+                font-weight: 700;
+                
+            }
+        }
 
-    .hero{}
+        .hero-text{
+            // border: 1px solid pink;
+            padding: 20px 120px 20px 20px;
+            margin-bottom: 0px;
+            p{
+                font-weight: 600;
+                color: $medium-gray;
+                font-size: 18px;
+            }
+        }
+
+        .hero-btn{
+            // border: 1px solid rgb(97, 8, 23);
+            padding: 20px;
+            margin-bottom: 40px;
+            .btn-hero{
+                padding: 16px 28px;
+                border: 2px solid $almost-black;
+                color: $almost-white;
+                background-color: $almost-black;
+                border-radius: 14px;
+                letter-spacing: .1px;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+                &:hover {
+                    color: $almost-black;
+                    border: 2px solid $almost-black;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .hero-sponsors{
+            // border: 1px solid rgb(184, 101, 45);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            img{
+                object-fit: cover;
+                width: auto;
+                margin-right: 50px;
+            }
+        }
+    }
 
     .hero-img-container{
+        // border: 1px solid rgb(184, 184, 45);
+        width: 50%;
+        display: flex;
+        justify-content:center;
+        padding: 0 32px;
         .hero-img{
-            width: 20px;
+            img {
+                width: 420px;
+                object-fit: cover;
+                // border: 1px solid rgb(168, 45, 184);
+            }
         }
     }
 }

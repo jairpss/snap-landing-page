@@ -10,6 +10,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 header .header-nav {
@@ -51,7 +52,7 @@ header .header-nav .header-nav_left .header-nav-links li {
 }
 
 header .header-nav .header-nav_left .header-nav-links .header-nav-link {
-  color: dimgray;
+  color: #7d7d7d;
   text-decoration: none;
   position: relative;
   font-family: "Epilogue", sans-serif;
@@ -70,7 +71,7 @@ header .header-nav .header-buttons .btn-login {
   margin-right: 20px;
   background-color: transparent;
   font-weight: 600;
-  color: dimgray;
+  color: #7d7d7d;
   cursor: pointer;
 }
 
@@ -80,8 +81,8 @@ header .header-nav .header-buttons .btn-login:hover {
 
 header .header-nav .header-buttons .btn-register {
   padding: 12px 20px;
-  border: 2.5px solid dimgray;
-  color: dimgray;
+  border: 2px solid #7d7d7d;
+  color: #7d7d7d;
   background-color: transparent;
   border-radius: 14px;
   font-weight: 600;
@@ -90,7 +91,7 @@ header .header-nav .header-buttons .btn-register {
 
 header .header-nav .header-buttons .btn-register:hover {
   color: #141414;
-  border: 2.5px solid #141414;
+  border: 2px solid #141414;
 }
 
 main {
@@ -101,9 +102,89 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 30px;
 }
 
-main .hero-img-container .hero-img {
-  width: 20px;
+main .hero {
+  width: 50%;
+  padding: 32px 0 32px 100px;
+}
+
+main .hero .hero-title {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+main .hero .hero-title h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+main .hero .hero-text {
+  padding: 20px 120px 20px 20px;
+  margin-bottom: 0px;
+}
+
+main .hero .hero-text p {
+  font-weight: 600;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+
+main .hero .hero-btn {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+main .hero .hero-btn .btn-hero {
+  padding: 16px 28px;
+  border: 2px solid #141414;
+  color: #fafafa;
+  background-color: #141414;
+  border-radius: 14px;
+  letter-spacing: .1px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main .hero .hero-btn .btn-hero:hover {
+  color: #141414;
+  border: 2px solid #141414;
+  background-color: transparent;
+}
+
+main .hero .hero-sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+main .hero .hero-sponsors img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  margin-right: 50px;
+}
+
+main .hero-img-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 32px;
+}
+
+main .hero-img-container .hero-img img {
+  width: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
