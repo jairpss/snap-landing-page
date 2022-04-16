@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
+
+//variables
+
+//-----COLORS-----
+
+$almost-white: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
+
+//-----FONTS-----
+
+$font-fam: 'Epilogue', sans-serif;
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: $font-fam;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+header{
+
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 38px;
+        // border: 1px solid red;
+
+        .header-nav_left{
+            display: flex;
+            
+            .header-nav-logo{
+                // border: 1px solid blue;
+                margin-right: 38px;
+            }
+    
+            .header-nav-links{
+                // border: 1px solid green;
+                ul {
+                    display: flex;
+                    align-items: center;
+                  }
+                
+                li {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    list-style: none;
+                  }
+                
+                .header-nav-link {
+                    color: $medium-gray;
+                    text-decoration: none;
+                    position: relative;
+                    // padding: 0 20px;
+                    font-family: $font-fam;
+                    font-size: 14px;
+                    text-align: center;
+                    font-weight: 600;
+                    &:hover {
+                        color: $almost-black;
+                    }
+                }    
+            }
+        }
+
+        .header-buttons{
+            .btn-login{
+                padding: 5px 10px;
+                border: none;
+                margin-right: 20px;
+                background-color: transparent;
+                font-weight: 600;
+                color: $medium-gray;
+                cursor: pointer;
+                &:hover {
+                    color: $almost-black;
+                }
+            }
+
+            .btn-register{
+                padding: 12px 20px;
+                border: 2.5px solid $medium-gray;
+                color: $medium-gray;
+                background-color: transparent;
+                border-radius: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover {
+                    color: $almost-black;
+                    border: 2.5px solid $almost-black;
+                }
+            }
+        }
+        
+    }
+
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+    .hero{}
+
+    .hero-img-container{
+        .hero-img{
+            width: 20px;
+        }
+    }
+}
