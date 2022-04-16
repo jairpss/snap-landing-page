@@ -65,6 +65,14 @@ header .header-nav .header-nav_left .header-nav-links .header-nav-link:hover {
   color: #141414;
 }
 
+header .header-nav .header-nav_left .header-nav-links .header-nav-link span {
+  margin-left: 4px;
+}
+
+header .header-nav .header-nav_left .header-nav-links .header-nav-link span img:hover {
+  fill: #141414;
+}
+
 header .header-nav .header-buttons .btn-login {
   padding: 5px 10px;
   border: none;

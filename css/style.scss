@@ -68,6 +68,16 @@ header{
                     &:hover {
                         color: $almost-black;
                     }
+
+                    span{
+                        margin-left: 4px;
+                        img{
+                            &:hover {
+                                fill: $almost-black;
+                            }
+                        }
+                        
+                    }
                 }    
             }
         }
