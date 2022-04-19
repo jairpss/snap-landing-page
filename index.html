@@ -9,23 +9,81 @@
   <title>Frontend Mentor | Snap Landing</title>
 </head>
 <body>
+
+  <!-- -------------header----------- -->
+
   <header>
     <nav class="header-nav">
       <div class="header-nav_left">
+
+        <!-- -------------logo----------- -->
+        
         <div class="header-nav-logo">
           <figure class="figure-logo">
             <a href="./index.html"><img src="./images/logo.svg"  alt="logo"></a>
           </figure>
         </div>
+
+        <div class="nav__menu"></div>
+
+        <!-- -------------links----------- -->
+
         <div class="header-nav-links">
-          <ul>
-            <li><a class="header-nav-link" href="#">Features <span><img src="./images/icon-arrow-down.svg"></span></a></li>
-            <li><a class="header-nav-link" href="#">Company <span><img src="./images/icon-arrow-down.svg"></span></a></li>
+          <ul class="nav__list">
+            <li>
+              <a class="header-nav-link dropdown" href="#">
+                Features 
+                <svg class="arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="hsl(0, 0%, 49%)" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+                </svg>
+              </a>
+
+              <div class="dropdown__container">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link" aria-label="dropdown-link">
+                      <img src="images/icon-todo.svg" alt="todo-icon" class="dropdown__icon">
+                      <span>Todo List</span>
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link" aria-label="dropdown-link">
+                      <img src="images/icon-calendar.svg" alt="calendar-icon" class="dropdown__icon">
+                      <span>Calendar</span>
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link" aria-label="dropdown-link">
+                      <img src="images/icon-reminders.svg" alt="reminders-icon" class="dropdown__icon">
+                      <span>Reminders</span>
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link" aria-label="dropdown-link">
+                      <img src="images/icon-planning.svg" alt="planning-icon" class="dropdown__icon">
+                      <span>Planning</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a class="header-nav-link" href="#">
+                Company 
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="hsl(0, 0%, 49%)" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+                </svg>
+              </a>
+            </li>
             <li><a class="header-nav-link" href="#">Careers</a></li>
             <li><a class="header-nav-link" href="#">About</a></li>
           </ul>
         </div> 
       </div>
+
+      <!-- -------------buttons----------- -->
+
       <div class="header-buttons">
         <button class="btn-login">Login</button>
         <button class="btn-register">Register</button>
@@ -36,6 +94,8 @@
   
  <main>
    <div class="hero">
+     <!-- -------------Title----------- -->
+
       <div class="hero-title">
         <h1>Make <br> remote work </h1> 
       </div>
@@ -45,6 +105,9 @@
             create team rituals, and watch productivity soar.
           </p>
       </div>
+
+      <!-- -------------CTA----------- -->
+
       <div class="hero-btn">
         <button class="btn-hero">Learn more</button>
       </div>
