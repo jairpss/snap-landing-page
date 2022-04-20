@@ -1,5 +1,13 @@
-const drop = document.querySelectorAll('.dropdown');
+const drop = document.querySelectorAll('.dropdown')
+const menu = document.querySelector('.nav__menu')
+const navList = document.querySelector('.nav__list')
 
+
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    navList.classList.toggle('active');
+    document.body.classList.toggle('active');
+})
 
 // dropdown menu
 
