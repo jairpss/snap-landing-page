@@ -30,24 +30,13 @@ header .header-nav {
   padding: 20px 38px;
 }
 
-header .header-nav .header-nav_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .header-nav .header-nav_left .header-nav-logo {
-  margin-right: 38px;
-}
-
-header .header-nav .header-nav_left .nav__menu {
-  border: 1px solid red;
+header .header-nav .nav__menu {
   margin-left: auto;
   -webkit-transform: translate(-0.625rem, -0.3125rem);
           transform: translate(-0.625rem, -0.3125rem);
   z-index: 999;
-  width: 2rem;
-  height: 1.125rem;
+  width: 30px;
+  height: 20px;
   background-image: url("../images/icon-menu.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,24 +47,64 @@ header .header-nav .header-nav_left .nav__menu {
 }
 
 @media screen and (min-width: 969px) {
-  header .header-nav .header-nav_left .nav__menu {
+  header .header-nav .nav__menu {
     display: none;
   }
 }
 
-header .header-nav .header-nav_left .nav__menu.active {
+header .header-nav .nav__menu.active {
   background-image: url("../images/icon-close-menu.svg");
-  width: 1.625rem;
-  height: 1.625rem;
+  width: 24px;
+  height: 22px;
 }
 
-header .header-nav .header-nav_left .header-nav-links .nav__list {
+header .header-nav .header-nav_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+header .header-nav .header-nav_left .header-nav-logo {
+  margin-right: 38px;
+}
+
+header .header-nav .header-nav_left .nav__item {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 969px) {
+  header .header-nav .header-nav_left .nav__item:nth-of-type(1) .dropdown__list {
+    margin-left: -3.5rem;
+  }
+}
+
+header .header-nav .header-nav_left .header-nav-links .nav__list {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  overflow-x: hidden;
+  background-color: #fafafa;
+  min-height: 100vh;
+  width: 15.625rem;
+  padding: 5rem 1rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+@media screen and (min-width: 969px) {
+  header .header-nav .header-nav_left .header-nav-links .nav__list {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 2rem;
+    column-gap: 2rem;
+    background-color: transparent;
+    margin-left: 3rem;
+    padding: 1.5rem 0 0;
+    min-height: auto;
+  }
 }
 
 header .header-nav .header-nav_left .header-nav-links .nav__list.active {
@@ -154,7 +183,9 @@ header .header-nav .header-nav_left .dropdown__link {
   align-items: center;
   -webkit-column-gap: 0.8rem;
   column-gap: 0.8rem;
-  font-size: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #7d7d7d;
 }
 
 @media screen and (min-width: 969px) {
@@ -163,6 +194,7 @@ header .header-nav .header-nav_left .dropdown__link {
     text-decoration: none;
     color: #7d7d7d;
     font-weight: 500;
+    text-decoration: none;
   }
   header .header-nav .header-nav_left .dropdown__link:hover {
     color: #141414;
@@ -187,6 +219,10 @@ header .header-nav .header-nav_left .dropdown.active .arrow {
 
 header .header-nav .header-nav_left .dropdown__container.active {
   display: block;
+}
+
+header .header-nav .header-buttons {
+  margin-left: auto;
 }
 
 header .header-nav .header-buttons .btn-login {
@@ -219,16 +255,10 @@ header .header-nav .header-buttons .btn-register:hover {
 }
 
 @media screen and (max-width: 969px) {
-  header .header-nav-links {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    overflow-x: hidden;
-  }
   header .header-buttons {
     position: absolute;
     top: 0;
-    right: -100%;
+    right: -200%;
     overflow-x: hidden;
   }
 }
@@ -341,6 +371,9 @@ main .hero-img-container .img-mob {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  main body {
+    overflow-x: hidden;
+  }
   main .hero {
     width: 100%;
     padding: 32px 20px;
@@ -449,12 +482,27 @@ main .hero-img-container .img-mob {
   }
 }
 
-@media screen and (max-width: 480px) {
-  main img {
+@media screen and (max-width: 475px) {
+  main .hero-sponsors {
+    padding: 10px;
+  }
+  main .hero-sponsors img {
     -o-object-fit: cover;
        object-fit: cover;
-    width: auto;
-    margin-right: 14px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .hero-sponsors {
+    padding: 5px;
+  }
+  main .hero-sponsors img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 18px;
+    margin-right: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
