@@ -3,30 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
   
-  <title>Pyae Thein (Ricky) | Intro section with dropdown navigation</title>
-
+  <title>Frontend Mentor | Snap Landing</title>
 </head>
 <body>
-  <main>
-    <section class="home">
-      <header class="header">
-        <nav class="nav">
-          <img src="images/logo.svg" alt="logo" class="logo">
-          
-          <!-- ==== toggle ===== -->
-          <div class="nav__menu"></div>
-          
-          <!-- ===== nav-list ===== -->
+
+  <!-- -------------header----------- -->
+
+  <header>
+    <nav class="header-nav">
+      <div class="header-nav_left">
+
+        <!-- -------------logo----------- -->
+        
+        <div class="header-nav-logo">
+          <figure class="figure-logo">
+            <a href="./index.html"><img src="./images/logo.svg"  alt="logo"></a>
+          </figure>
+        </div>
+
+        <!-- -------------toggle menu----------- -->
+
+        <div class="nav__menu"></div>
+
+        <!-- -------------links----------- -->
+
+        <div class="header-nav-links">
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link dropdown">
-                <span>Features</span>
+            <li>
+              <a class="header-nav-link dropdown" href="#">
+                Features 
                 <svg class="arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+                  <path stroke="hsl(0, 0%, 49%)" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
                 </svg>
               </a>
 
@@ -59,88 +69,88 @@
                 </ul>
               </div>
             </li>
-            
-            <li class="nav__item">
-              <a href="#" class="nav__link dropdown">
-                <span>Company</span>
+
+            <li>
+              <a class="header-nav-link dropdown" href="#">
+                Company 
                 <svg class="arrow" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+                  <path stroke="hsl(0, 0%, 49%)" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
                 </svg>
               </a>
-
               <div class="dropdown__container">
                 <ul class="dropdown__list">
                   <li class="dropdown__item">
                     <a href="#" class="dropdown__link" aria-label="dropdown-link">
-                      History
+                      <span>Histoy</span>
                     </a>
                   </li>
                   <li class="dropdown__item">
                     <a href="#" class="dropdown__link" aria-label="dropdown-link">
-                      Our Team
+                      <span>Our Team</span>
                     </a>
                   </li>
                   <li class="dropdown__item">
                     <a href="#" class="dropdown__link" aria-label="dropdown-link">
-                      Blog
+                      <span>Blog</span>
                     </a>
                   </li>
+                
                 </ul>
               </div>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Careers</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
-            </li>
+            <li><a class="header-nav-link" href="#">Careers</a></li>
+            <li><a class="header-nav-link" href="#">About</a></li>
           </ul>
-          <div class="nav__account">
-            <ul class="nav__account-list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Login</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link btn btn__ghost">Register</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <div class="home__content">
-        <picture>
-          <source media="(max-width: 968px)" srcset="images/image-hero-mobile.png">
-          <source media="(min-width: 969px)" srcset="images/image-hero-desktop.png">
-          <img src="images/image-hero-mobile.png" alt="banner" class="home__banner">
-        </picture>
-        <div class="home__text">
-          <h1 class="home__title">Make remote work</h1>
-          <p class="home__desc">
-            Get your team in sync, no matter your location. Streamline processes, 
+        </div> 
+      </div>
+
+      <!-- -------------buttons----------- -->
+
+      <div class="header-buttons">
+        <button class="btn-login">Login</button>
+        <button class="btn-register">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  
+ <main>
+   <div class="hero">
+     <!-- -------------Title----------- -->
+
+      <div class="hero-title">
+        <h1>Make <br> remote work </h1> 
+      </div>
+     
+      <div class="hero-text">
+          <p>Get your team in sync, no matter your location. Streamline processes, 
             create team rituals, and watch productivity soar.
           </p>
-          <a href="#" class="btn btn__fill">Learn more</a>
-          <div class="footer">
-            <ul class="footer__brands">
-              <li class="footer__brand">
-                <img src="images/client-databiz.svg" alt="databiz-logo" class="footer__logo">
-              </li>
-              <li class="footer__brand">
-                <img src="images/client-audiophile.svg" alt="audiophile-logo" class="footer__logo">
-              </li>
-              <li class="footer__brand">
-                <img src="images/client-meet.svg" alt="meet-logo" class="footer__logo">
-              </li>
-              <li class="footer__brand">
-                <img src="images/client-maker.svg" alt="maker-logo" class="footer__logo">
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </section>
-  </main>
 
-  <script src="js/script.js"></script>
+      <!-- -------------CTA----------- -->
+
+      <div class="hero-btn">
+        <button class="btn-hero">Learn more</button>
+      </div>
+      <div class="hero-sponsors">
+          <img src="./images/client-databiz.svg">
+          <img src="./images/client-audiophile.svg">
+          <img src="./images/client-meet.svg">
+          <img src="./images/client-maker.svg">
+      </div>
+   </div>
+
+   <div class="hero-img-container">
+    <figure class="hero-img">
+      <img src="./images/image-hero-desktop.png"  class="img-desk" alt="hero image">
+      <img src="./images/image-hero-mobile.png" class="img-mob">
+    </figure>
+   </div>
+ </main>
+
+  
+  
+  <script src="./app.js"></script>
 </body>
 </html>
